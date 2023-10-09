@@ -1,0 +1,20 @@
+{
+    "name": "Aniskip",
+    "version": "0.0.2",
+    "author": "Mallow",
+    "manifest_version": 3,
+    "description": "By pressing CTRL+Arrow Right, the current playing video will skip 90s (anime opening duration).",
+    "content_scripts": [
+        {
+            "js": ["scripts/main.js"],
+            "css": [],
+            "matches": ["<all_urls>"],
+            "all_frames": true
+        }
+    ],
+    "icons": {
+        "16": "assets/icons/icon_16.png",
+        "48": "assets/icons/icon_48.png",
+        "128": "assets/icons/icon_128.png"
+    }
+}
