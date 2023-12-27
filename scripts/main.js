@@ -6,7 +6,7 @@
         if (!can_use) return;
         if (keys.includes("Control") && keys.includes("ArrowRight")) {
             const video_element = document.querySelector('video');
-            if (!video) return;
+            if (!video_element) return;
             video_element.currentTime += 90;
             can_use = false;
             setTimeout(() => {can_use = true}, 1000);
